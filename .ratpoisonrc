@@ -1,0 +1,14 @@
+exec xrdb /home/matti/.Xresources
+
+# Creates 6 workspaces, accessible through ALT-F1 .. ALT-F6
+exec /usr/bin/rpws init 6 -k
+
+# Start-up xterm in UTF-8 mode 
+
+bind c exec xterm -u8
+bind j focus
+bind o only
+
+# Currently selected window
+set fwcolor #DAA520
+escape C-space

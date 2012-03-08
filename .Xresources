@@ -1,0 +1,49 @@
+! Needed for other than foreground/background colors do be displayed
+VT100*colorMode: on
+VT100*dynamicColors: on
+! This might fix left alt-meta issue
+xterm*eightBitInput: false
+
+
+
+XTerm*faceName:           Envy Code R:pixelsize=14
+!XTerm*font:xft:Envy Code R:pixelsize=12
+XTerm*saveLines:        32767
+XTerm*termName: xterm-256color
+!XTerm*foreground: LightGoldenrod1
+!XTerm*background: CornFlowerblue
+
+
+!XTerm.depth: 32
+
+XTerm*foreground: #dcdccc
+XTerm*background: #3f3f3f
+
+
+!black
+XTerm*color0: #353535
+XTerm*color8: #666666
+!red
+XTerm*color1: #AE4747
+XTerm*color9: #EE6363
+!green
+XTerm*color2: #556B2F
+XTerm*color10: #9ACD32
+!brown/yellow
+XTerm*color3: #DAA520
+XTerm*color11: #FFC125
+!blue
+XTerm*color4: #6F99B4
+XTerm*color12: #7C96B0
+!magenta
+XTerm*color5: #8B7B8B
+XTerm*color13: #D8BFD8
+!cyan
+XTerm*color6: #A7A15E
+XTerm*color14: #F0E68C
+!white
+XTerm*color7: #DDDDDD
+XTerm*color15: #FFFFFF
+
+
+
