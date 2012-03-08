@@ -1,14 +1,20 @@
-exec xrdb /home/matti/.Xresources
+# Let's load up some .Xresources
+exec xrdb ~/.Xresources
 
 # Creates 6 workspaces, accessible through ALT-F1 .. ALT-F6
 exec /usr/bin/rpws init 6 -k
 
 # Start-up xterm in UTF-8 mode 
-
 bind c exec xterm -u8
+
+#Change frame with j
 bind j focus
+
+#Make the current frame the only one 
 bind o only
 
 # Currently selected window
 set fwcolor #DAA520
+
+# Having space as the escape key does interfere a bit with emacs and mplayer, but it's worth it
 escape C-space

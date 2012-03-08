@@ -19,3 +19,16 @@
 (setq org-capture-templates
       '(("j" "Journal" entry (file+datetree "~/Dropbox/tjournal.org")
              "* %?\nEntered on %U\n  %i\n  %a")))
+; Used for cut n paste interaction with X11, unsure it it works
+(require 'ratpoison-cmd)
+
+(defun rp-cut-function (text &optional push)
+    (ratpoison-putsel text))
+
+(defun rp-paste-function ()
+  (ratpoison-getsel))
+
+(if (not (eq window-system 'x))
+    (progn
+      (setq interprogram-cut-function 'rp-cut-function)
+      (setq interprogram-paste-function 'rp-paste-function)))

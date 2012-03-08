@@ -1,24 +1,19 @@
 ! Needed for other than foreground/background colors do be displayed
 VT100*colorMode: on
 VT100*dynamicColors: on
-! This might fix left alt-meta issue
+! Required for Left-ALT to work as a meta-key
 xterm*eightBitInput: false
 
 
 
 XTerm*faceName:           Envy Code R:pixelsize=14
-!XTerm*font:xft:Envy Code R:pixelsize=12
 XTerm*saveLines:        32767
 XTerm*termName: xterm-256color
-!XTerm*foreground: LightGoldenrod1
-!XTerm*background: CornFlowerblue
 
-
-!XTerm.depth: 32
+!Zenburn colors below
 
 XTerm*foreground: #dcdccc
 XTerm*background: #3f3f3f
-
 
 !black
 XTerm*color0: #353535
