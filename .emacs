@@ -14,6 +14,9 @@
 
 (set-default-font "-unknown-Envy Code R-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
 
+; Turn on visual-line-mode when in org
+(add-hook 'org-mode-hook 'turn-on-visual-line-mode)
+
 (define-key global-map "\C-cc" 'org-capture)
 
 ; Templates for org-capture
