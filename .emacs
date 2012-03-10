@@ -16,9 +16,15 @@
 
 (define-key global-map "\C-cc" 'org-capture)
 
-(setq org-capture-templates
-      '(("j" "Journal" entry (file+datetree "~/Dropbox/tjournal.org")
-             "* %?\nEntered on %U\n  %i\n  %a")))
+; Templates for org-capture
+
+(setq org-capture-templates 
+'(("r" "risky template" entry (file+datetree "~/Dropbox/org/risky.org") "* %U %?")
+("j" "Journal m datum" entry (file+datetree  "~/Dropbox/org/journal.org") "* %U %^{What's this entry about?}\n  %?")
+))
+
+
+
 ; Used for cut n paste interaction with X11, unsure it it works
 (require 'ratpoison-cmd)
 
@@ -28,7 +34,11 @@
 (defun rp-paste-function ()
   (ratpoison-getsel))
 
-(if (not (eq window-system 'x))
-    (progn
-      (setq interprogram-cut-function 'rp-cut-function)
-      (setq interprogram-paste-function 'rp-paste-function)))
+;(if (not (eq window-system 'x))
+;    (progn
+;      (setq interprogram-cut-function 'rp-cut-function)
+;      (setq interprogram-paste-function 'rp-paste-function)))
+
+
+
+
