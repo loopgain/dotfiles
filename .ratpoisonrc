@@ -1,8 +1,8 @@
 # Let's load up some .Xresources
 exec xrdb ~/.Xresources
 
-# Creates 6 workspaces, accessible through ALT-F1 .. ALT-F6
-exec /usr/bin/rpws init 9 -k
+# Creates 6 workspaces, accessible through ALT-F1 .. ALT-F12
+exec /usr/bin/rpws init 12 -k
 
 # Start-up xterm in UTF-8 mode 
 bind c exec xterm -u8
