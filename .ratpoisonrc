@@ -10,10 +10,16 @@ bind c exec xterm -u8
 #Change frame with j
 bind j focus
 
+
 bind b focusdown
 bind y focusup
 bind g focusleft 
 bind h focusright
+
+bind B exchangedown
+bind Y exchangeup
+bind G exchangeleft
+bind H exchangeright
 
 #Make the current frame the only one 
 bind o only
